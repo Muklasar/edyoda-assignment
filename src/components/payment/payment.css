@@ -1,0 +1,496 @@
+.payment-wrapper {
+    background-color: rgba(23, 39, 70, 1);
+    height: auto;
+    position: relative;
+    z-index: 1;
+    /* padding-top: 30px; */
+}
+
+.payment-row {
+    padding: 50px 65px;
+
+}
+
+.payment-left {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 125%;
+    /* identical to box height, or 70px */
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    color: var(--white);
+    z-index: 9999;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+
+}
+
+.price99 {
+    font-family: var(--roboto);
+    color: var(--primary2);
+}
+
+.price-decoration {
+    /* text-decoration: ; */
+    text-decoration-line: line-through;
+    text-decoration-color: var(--danger2);
+    font-family: var(--roboto);
+}
+
+.payment-left-bottom-ul {
+    font-family: var(--roboto);
+    font-weight: 600;
+    font-size: 25px;
+    text-align: start;
+    /* border: 1px solid var(--danger2); */
+    padding: 0;
+
+}
+
+.payment-left-bottom-ul>li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* justify-content: start; */
+}
+
+.payment-left-bottom-ul>li :first-child {
+    margin-right: 22px;
+    /* letter-spacing: 2px; */
+}
+
+.payment-left-bottom-ul>li :last-child {
+    /* margin-left: 22px; */
+    letter-spacing: 2px;
+}
+
+/* payment right */
+.payment-right {
+    z-index: 1;
+    padding: 0;
+}
+
+.payment-card {
+    border-radius: 8px;
+    background-color: var(--white);
+    height: 100%;
+    font-family: var(--roboto);
+    padding: 20px 15px;
+    color: var(--text2);
+}
+
+.payment-card-header {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.payment-card-header-circle-div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.payment-card-header-circle {
+    text-align: center;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: var(--primary1);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.payment-card-header-circle-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: #3C4852;
+    margin-top: 5px;
+}
+
+/* card descriptions */
+
+.subscription-descriptions {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 125.3%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* subscriptions section */
+
+.subscription-wrapper {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.subscription-card {
+    border: 2px solid var(--text3);
+    border-radius: 4px;
+    padding: 10px 16px;
+    position: relative;
+    top: 0;
+    background-color: var(--white);
+}
+
+.subscription-budge {
+    position: absolute;
+    width: 121px;
+    height: 16px;
+    left: 62px;
+    top: 0px;
+    /* background: var(--success1); */
+    border-radius: 0px 0px 4px 4px;
+    font-weight: 500;
+    letter-spacing: .1px;
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+/* radio container */
+.round {
+    position: relative;
+}
+
+.round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+
+.round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked+label {
+    background-color: var(--success1);
+    border-color: var(--success1);
+}
+
+.round input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+
+/* subscription-content */
+.subscription-content {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.subscription-text1 {
+    margin-left: 28px;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.subscription-total {
+    text-align: end;
+}
+
+.total-amount {
+    display: inline-block;
+}
+
+.total-amount>.text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.total-amount>.amount {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-left: 10px;
+}
+
+.month-amount {}
+
+.month-amount>.amount {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text2);
+}
+
+.month-amount>.text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--text3);
+    margin-left: 10px;
+}
+
+/* activate subscription card */
+
+.subscription-card-active {
+    border: 1px solid var(--success1);
+    border: 2px solid var(--success1);
+    background-color: var(--success2);
+}
+
+.subscription-budge-active {
+    background: var(--success1);
+    color: var(--white);
+}
+
+.round-active input[type="checkbox"]:checked+label {
+    background-color: var(--success1);
+    border-color: var(--success1);
+}
+
+/* disable subscription card */
+
+.subscription-card-disable {
+    border: 2px solid var(--text3);
+    background-color: var(--disable);
+}
+
+.subscription-budge-disable {
+    background: var(--danger1);
+    color: var(--white);
+}
+
+
+.round-disable input[type="checkbox"]:checked+label {
+    background-color: var(--text3);
+    border-color: var(--text3);
+    /* margin: 10px; */
+    /* border: 2px solid red; */
+    padding: 3px;
+}
+
+.round-disable label {
+    background-color: var(--text3);
+    border: 2px solid var(--text3);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+
+.subscription-text1-disable {
+    color: var(--text3);
+}
+
+.total-amount-disable {
+    color: var(--text3);
+}
+
+
+/* subacription fees */
+
+.subscription-fee {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px 0 20px;
+    color: var(--text2);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    margin-top: 20px;
+    border-top: 2px solid var(--text3)
+}
+
+/* offer section */
+.offer {
+    background: linear-gradient(135deg, rgba(222, 67, 19, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(222, 67, 19, 0.2) 2.92%, rgba(222, 68, 20, 0.2) 6.37%, rgba(223, 69, 21, 0.2) 10.97%, rgba(223, 72, 22, 0.2) 16.59%, rgba(224, 75, 24, 0.2) 23.1%, rgba(225, 80, 27, 0.2) 30.37%, rgba(227, 86, 31, 0.2) 38.27%, rgba(229, 94, 36, 0.2) 46.66%, rgba(231, 104, 43, 0.2) 55.41%, rgba(235, 117, 51, 0.2) 64.39%, rgba(238, 132, 60, 0.2) 73.47%, rgba(243, 149, 71, 0.2) 82.52%, rgba(248, 169, 84, 0.2) 91.41%, rgba(254, 193, 99, 0.2) 100%);
+    border-radius: 8px;
+    padding: 12px 24px;
+
+}
+
+.offer-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    /* gap: 12px; */
+    /* height: 24px; */
+
+    /* flex-grow: 0; */
+}
+
+.offer-sub :first-child {
+    color: var(--alert-text);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.offer-date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--alert-text);
+    margin: -10px 0 1px;
+    padding: 0;
+}
+
+.offer-icon {
+    /* color: var(--alert-text);
+    background-color: var(--alert-text); */
+}
+
+/* total */
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 24px 0 20px;
+}
+
+.total-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    margin-right: 5px;
+}
+
+.total-amount {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #3C4852;
+}
+
+
+/* button section */
+
+.button-section {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-button {
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+
+    width: 230.5px;
+    height: 56px;
+
+    border: 2px solid #F77171;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #F77171;
+
+    /* Inside auto layout */
+    cursor: pointer;
+
+}
+
+.process-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+
+    width: 230.5px;
+    height: 56px;
+
+    background: #47BA68;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    cursor: pointer;
+
+    color: #FFFFFF;
+
+}
